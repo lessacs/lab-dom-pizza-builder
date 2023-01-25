@@ -85,13 +85,13 @@ function renderGlutenFreeCrust() {
 }
 
 function renderButtons() {
-  document.querySelectorAll('.btn.btn').forEach((bttn).addEventListener('click', function () {
-    
-  }))
-    
-
-    }
-
+  const bttn = document.querySelectorAll('.btn.btn');
+  bttn.forEach(button => {
+    button.addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+});
+}
   // Iteration 3: add/remove the class "active" of each `<button class="btn">`
 
 
